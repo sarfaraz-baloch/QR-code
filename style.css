@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-color:var(--Light-gray) ;   
+}
+.main{
+    /* border: 2px solid red; */
+    width: 25%;
+    height: 80%;
+    padding: 10px 10px;
+    background-color: var(--White);
+    border: 15px solid var(--White);
+    border-radius: 5px ;
+}
+.left {
+    /* border: 2px solid red; */
+ width: 100%;
+ height: 70%;
+ background-image: url(./images/image-qr-code.png);
+ background-size: cover;
+ border-radius: 10px;
+}
+.right{
+    margin-top: 10px;
+    text-align: center;
+}
+.right h1{
+    font-size: x-large;
+    color: var(--Dark-blue);
+}
+.right p{
+    margin-top: 5px;
+    color: var(--Grayish-blue);
+}
+@media (max-width:375px){
+.main{
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+.left{
+    height:70%;
+    width: 100%;
+    background-size: cover;
+}
+.right{
+    /* width: 100%; */
+    height: 20%;
+    width: 100%;
+}
+}
